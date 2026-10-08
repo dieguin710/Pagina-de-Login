@@ -16,7 +16,7 @@ function getDataUser(){
     const dadosSalvosparse = JSON.parse(localStorage.getItem("@userData"));
     if(dadosSalvosparse) {
 
-        spanData.innerHTML = dadosSalvosparse.user
+        spanData.innerHTML = `Bem vindo(a): ${dadosSalvosparse.user}!`
         console.log(dadosSalvosparse) 
     }else {
         spanData.textContent = "Nenhum usuario logado."
